@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method = "GET">
+     <h2> Request Patient Record </h2>
+     <h3> Enter Pet Name and hit "Submit" </h3>
+     <input type="text" name="PetName"/>
+     <button type="text">Submit</button>
+</form>
+
+<form method = "NEW">
+     <h2> Add new Patient record </h2>
+    <input type="text" name="newRecord"/>
+    <button type="text">Submit</button>
+</form>
+
+<form method = "POST">
+     <h2> Add note to patient record </h2>
+    <input type="text" name="note"/>
+    <button type="text">Submit</button>
+</form>
+
+{% for note in Notes %}
+<p>{{Notes[5]}}</p>
+{% endfor %}
+
+{% endblock %}
